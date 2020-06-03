@@ -1,2 +1,3 @@
 name: Paule Gilbert, artiste
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
