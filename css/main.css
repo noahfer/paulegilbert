@@ -16,10 +16,10 @@ header > * {
     padding: 20px;
 }
 h1 {
-    font: normal 26pt Georgia;
+    font: normal 30pt Georgia;
 }
 a {
-    font: bold 28px;
+    font-size: 25px;
     text-decoration: none;
     font-variant: small-caps;
 }
