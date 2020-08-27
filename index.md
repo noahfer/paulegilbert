@@ -7,7 +7,7 @@ title: Paule Gilbert
 	<a href="#demarche">Démarche</a>
 	<a href="#portfolio">Portfolio</a>
 	<a href="mailto:gilb.paule@gmail.com">Contact</a>
-	<a href="/cv-paule-gilbert.pdf" target="_blank">CV</a>
+	<a href="/paulegilbert/cv-paule-gilbert.pdf" target="_blank">CV</a>
 </header>
 <section id="demarche">
 	<h2>Démarche</h2>
@@ -19,61 +19,61 @@ title: Paule Gilbert
 	<h2>Portfolio</h2>
 	<div class="grid-row">
 		<div class="grid-column">
-			<a href="/portfolio/built-in-memories">
+			<a href="portfolio/built-in-memories">
 				<img src="/icons/built-in-memories.jpg" alt="art piece">
 				<h3>Built-in Memories</h3>
 			</a>
-			<a href="/portfolio/cartographie">
+			<a href="portfolio/cartographie">
 				<img src="/icons/cartographie.jpg" alt="art piece">
 				<h3>Cartographie</h3>
 			</a>
-			<a href="/portfolio/contact-series">
+			<a href="portfolio/contact-series">
 				<img src="/icons/contact-series.jpg" alt="art piece">
 				<h3>Contact Series</h3>
 			</a>
-			<a href="/portfolio/crochet-improvise-avec-une-seule-ficelle">
+			<a href="portfolio/crochet-improvise-avec-une-seule-ficelle">
 				<img src="/icons/crochet-improvise-avec-une-seule-ficelle.jpg" alt="art piece">
 				<h3>Crochet improvisé avec une seule ficelle</h3>
 			</a>
-			<a href="/portfolio/embodied-sculpture">
+			<a href="portfolio/embodied-sculpture">
 				<img src="/icons/embodied-sculpture.jpg" alt="art piece">
 				<h3>Embodied Sculpture</h3>
 			</a>
-			<a href="/portfolio/escalators-as-drawing-device">
+			<a href="portfolio/escalators-as-drawing-device">
 				<img src="/icons/escalators-as-drawing-device.jpg" alt="art piece">
 				<h3>Escalators as Drawing Device</h3>
 			</a>
-			<a href="/portfolio/la-fois-ou-jai-ecoute-les-guepes">
+			<a href="portfolio/la-fois-ou-jai-ecoute-les-guepes">
 				<img src="/icons/la-fois-ou-jai-ecoute-les-guepes.jpg" alt="art piece">
 				<h3>La fois où j'ai ecouté les guêpes</h3>
 			</a>
 		</div>
 		<div class="grid-column">
-			<a href="/portfolio/les-ouvrieres-la-reine">
+			<a href="portfolio/les-ouvrieres-la-reine">
 				<img src="/icons/les-ouvrieres-la-reine.jpg" alt="art piece">
 				<h3>Les Ouvrières/La Reine</h3>
 			</a>
-			<a href="/portfolio/secrets-de-famille">
+			<a href="portfolio/secrets-de-famille">
 				<img src="/icons/secrets-de-famille.jpg" alt="art piece">
 				<h3>Secrets de famille</h3>
 			</a>
-			<a href="/portfolio/thank-you-for-visiting">
+			<a href="portfolio/thank-you-for-visiting">
 				<img src="/icons/thank-you-for-visiting.jpg" alt="art piece">
 				<h3>Thank you for Visiting</h3>
 			</a>
-			<a href="/portfolio/tribologie">
+			<a href="portfolio/tribologie">
 				<img src="/icons/tribologie.jpg" alt="art piece">
 				<h3>Tribologie</h3>
 			</a>
-			<a href="/portfolio/untitled-grid-animation">
+			<a href="portfolio/untitled-grid-animation">
 				<img src="/icons/untitled-grid-animation.jpg" alt="art piece">
 				<h3>Untitled Grid Animation</h3>
 			</a>
-			<a href="/portfolio/untitled-performance">
+			<a href="portfolio/untitled-performance">
 				<img src="/icons/untitled-performance.jpg" alt="art piece">
 				<h3>Untitled Performance</h3>
 			</a>
-			<a href="/portfolio/untitled-video-worldling">
+			<a href="portfolio/untitled-video-worldling">
 				<img src="/icons/untitled-video-worldling.jpg" alt="art piece">
 				<h3>Untitled Video Worldling</h3>
 			</a>
