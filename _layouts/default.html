@@ -16,48 +16,11 @@
 		{{ content }}
 
 		<section id="portfolio-list">
-			<a href="portfolio/built-in-memories" style="background: url(icons/built-in-memories.jpg)">
-				<h3>Built-in Memories</h3>
-			</a>
-			<a href="portfolio/cartographie" style="background: url(icons/cartographie.jpg)">
-				<h3>Cartographie</h3>
-			</a>
-			<a href="portfolio/contact-series" style="background: url(icons/contact-series.jpg)">
-				<h3>Contact Series</h3>
-			</a>
-			<a href="portfolio/crochet-improvise-avec-une-seule-ficelle" style="background: url(icons/crochet-improvise-avec-une-seule-ficelle.jpg)">
-				<h3>Crochet improvisé avec une seule ficelle</h3>
-			</a>
-			<a href="portfolio/embodied-sculpture" style="background: url(icons/embodied-sculpture.jpg)">
-				<h3>Embodied Sculpture</h3>
-			</a>
-			<a href="portfolio/escalators-as-drawing-device" style="background: url(icons/escalators-as-drawing-device.jpg)">
-				<h3>Escalators as Drawing Device</h3>
-			</a>
-			<a href="portfolio/la-fois-ou-jai-ecoute-les-guepes" style="background: url(icons/la-fois-ou-jai-ecoute-les-guepes.jpg)">
-				<h3>La fois où j'ai écouté les guêpes</h3>
-			</a>
-			<a href="portfolio/les-ouvrieres-la-reine" style="background: url(icons/les-ouvrieres-la-reine.jpg)">
-				<h3>Les Ouvrières/La Reine</h3>
-			</a>
-			<a href="portfolio/secrets-de-famille" style="background: url(icons/secrets-de-famille.jpg)">
-				<h3>Secrets de famille</h3>
-			</a>
-			<a href="portfolio/thank-you-for-visiting" style="background: url(icons/thank-you-for-visiting.jpg)">
-				<h3>Thank you for Visiting</h3>
-			</a>
-			<a href="portfolio/tribologie" style="background: url(icons/tribologie.jpg)">
-				<h3>Tribologie</h3>
-			</a>
-			<a href="portfolio/untitled-grid-animation" style="background: url(icons/untitled-grid-animation.jpg)">
-				<h3>Untitled Grid Animation</h3>
-			</a>
-			<a href="portfolio/untitled-performance" style="background: url(icons/untitled-performance.jpg)">
-				<h3>Untitled Performance</h3>
-			</a>
-			<a href="portfolio/untitled-video-worldling" style="background: url(icons/untitled-video-worldling.jpg)">
-				<h3>Untitled Video Worldling</h3>
-			</a>
+			{% for post in site.posts %}
+				<a href="{{ post.url }}" title="{{ post.title }}">
+					<h3>{{ post.title }}</h3>
+				</a>
+	  		{% endfor %}
 		</section>
 	</body>
 </html>
