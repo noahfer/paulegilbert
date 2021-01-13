@@ -10,17 +10,16 @@
 		<meta name="description" content="Paule Gilbert portfolio web page">
 		<meta name="keywords"    content="Paule, Gilbert, artiste, artist">
 		<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+		{% feed_meta %}
+    	{% seo %}
 	</head>
 	<body>
 		
 		{{ content }}
 
-		<section id="portfolio-list">
-			{% for post in site.posts %}
-				<a href="{{ post.url }}" title="{{ post.title }}">
-					<h3>{{ post.title }}</h3>
-				</a>
-	  		{% endfor %}
-		</section>
+		{% include portfolio.html %}
+
+		{% include footer.html %}
+		
 	</body>
 </html>
