@@ -1,0 +1,12 @@
+<div id="portfolio-list">
+	<section>
+		{% for post in site.posts %}
+			{% capture thumbnail %}
+			/img/thumbnails/{{ post.short }}.jpg
+			{% endcapture %}
+			<a href="{{ post.url }}" title="{{ post.title }}" style="background-image: url({{ thumbnail }});">
+				<h3>{{ post.title }}</h3>
+			</a>
+		{% endfor %}
+	</section>
+</div>
