@@ -1,82 +1,158 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:verdana, arial, sans-serif;
-    --accent: #9d2a2a;
-    --light: #fdf3e8;
-}
-body {
-    background-color: var(--light);
-}
-header {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-header > * {
-    color: var(--accent);
-    padding: 20px;
-    width: 100%;
-    text-align: center;
-}
-h1 {
-    font: normal 30pt Georgia;
-}
-header a {
-    font-size: 25px;
-    text-decoration: none;
-    font-variant: small-caps;
-}
-section > * {
-    padding: 10px 0;
-}
-h2 {
-    font: normal 25pt Arial;
-}
-#demarche {
-    background-color: var(--accent);
-    color: var(--light);
-}
-#portfolio h2 {
-    color: var(--accent);
-}
-#portfolio-list {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-#portfolio-list > a {
-    height: 200px;
-    width: 360px;
-    margin: 10px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    background: center no-repeat;
-}
-#portfolio-list > a:hover {
-    outline: 1px solid var(--accent);
-    outline-offset: 5px;
-}
-h3 {
-    color: var(--accent);
-    padding: 5px;
-}
-/* Landscape */
-@media screen and () {
-
-}
-/* Tablet */
-@media screen and (min-width: 900px) {
-
-}
-/* Desktop */
-@media screen and (min-width: 1000px) {
-    section > *, #portfolio-list {
-        width: 8.5in;
-        margin: 0 auto;
+/* General */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: inherit;
+        text-decoration: inherit;
+        --accent: #9d2a2a;
+        --light: hsl(31, 84%, 95%);
     }
+    body {
+        background-color: var(--light);
+    }
+    body > * {
+        width: 100%;
+    }
+    div > section > * {
+        padding: 10px 0;
+    }
+    section {
+        margin: 0 5px;
+    }
+/* Paule Gilbert */
+    h1 {
+        font: normal 30pt Times;
 }
+/* Sub-headers */
+    h2 {
+        font: normal 25pt Arial;
+        font-variant: small-caps;
+        color: var(--accent);
+    }
+/* Thumbnails */
+    h3 {
+        color: var(--accent);
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        background-color: hsla(31, 84%, 95%, 0.75);
+    }
+/* Homepage */
+    nav > section {
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    nav > section > * {
+        color: var(--accent);
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    nav a {
+        font-size: 25px;
+        text-decoration: none;
+        font-variant: small-caps;
+    }
+    nav a:hover:not(:first-child) {
+        text-decoration: underline;
+    }
+/* Démarche */
+    #demarche {
+        background-color: var(--accent);
+    }
+    #demarche > section > * {
+        color: var(--light);
+    }
+/* Portfolio */
+    #portfolio-list > section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    #portfolio-list > section > a {
+        height: 200px;
+        width: 360px;
+        margin: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: flex-end;
+        background: no-repeat center;
+        background-size: cover;
+    }
+    #portfolio-list > section > a:hover > h3 {
+        text-decoration: underline;
+    }
+/* Posts */
+    header {
+        padding: 10px 0;
+        text-decoration: none;
+    }
+    #top-header {
+        background-color: var(--light);
+        color: var(--accent);
+    }
+    #hidden-header {
+        position: fixed;
+        background-color: var(--accent);
+        color: var(--light);
+        top: -60px;
+        transition: top 0.3s;
+    }
+    .home {
+        font: 20pt Times;
+    }
+    .link {
+        font-weight: bold;
+        float: right;
+        padding: 5px;
+        margin-left: 12px;
+    }
+    .link:hover {
+        text-decoration: underline;
+    }
+    .image {
+        height: 60vh;
+        width: 100%;
+        background-image: url(/icons/default.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
+        background-position: center;
+        border: 2px solid blue;
+    }
+    main {
+        height: 100vh;
+        border: 1px dashed black;
+    }
+    main > section > * {
+        padding: 10px 0;
+    }
+/* Footer */
+    footer {
+        background-color: var(--accent);
+        color: var(--light );
+        height: 50px;
+    }
+    footer p {
+        padding-top: 10px;
+    }
+/* Landscape */
+    @media screen and () {
+
+    }
+/* Tablet */
+    @media screen and (min-width: 900px) {
+
+    }
+/* Desktop */
+    @media screen and (min-width: 1000px) {
+        section {
+            width: 8.5in;
+            margin: 0 auto;
+        }
+    }
