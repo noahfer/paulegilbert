@@ -1,12 +1,35 @@
 <div id="portfolio-list">
+	<p id="coord"></p>
 	<section>
+		{% assign delay = "0" %}
 		{% for post in site.posts %}
+			{% if post.short == page.short %}
+				{% continue %}
+			{% endif %}
 			{% capture thumbnail %}
-			/img/thumbnails/{{ post.short }}.jpg
+				img/thumbnails/{{ post.short }}.jpg
 			{% endcapture %}
-			<a href="{{ post.url }}" title="{{ post.title }}" style="background-image: url({{ thumbnail }});">
+			<a href="{{ post.url }}" title="{{ post.title }}" style="background-image: url({{ thumbnail }});" class="fade" data-delay="0.0s">
 				<h3>{{ post.title }}</h3>
 			</a>
 		{% endfor %}
 	</section>
 </div>
+<script>
+	const toFade = document.querySelectorAll('.fade');
+
+	observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if(entry.intersectionRatio > 0) {
+				entry.target.style.animation = `myFade 1s ${entry.target.dataset.delay} forwards ease-out`;
+			}
+			else {
+				entry.target.style.animation = 'none';
+			}
+		})
+	})
+
+	toFade.forEach(image => {
+		observer.observe(image)
+	})
+</script>
