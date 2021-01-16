@@ -1,6 +1,6 @@
 name: Paule Gilbert, artiste
 markdown: kramdown
-permalink: /paulegilbert/:year/:title
+permalink: paulegilbert/:year/:title
 
 defaults:
   - scope:
