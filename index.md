@@ -2,8 +2,11 @@
 title: Paule Gilbert
 ---
 <nav>
+	<video autoplay muted loop id="grid-video" onload="setPlaySpeed()">
+		<source src="grid.mp4" type="video/mp4">
+	</video>
 	<section>
-		<a href="/"><h1>{{ page.title }}</h1></a>
+		<a href=""><h1>{{ page.title }}</h1></a>
 		<a href="#demarche">Démarche</a>
 		<a href="#portfolio">Portfolio</a>
 		<a href="mailto:gilb.paule@gmail.com">Contact</a>
@@ -25,3 +28,8 @@ title: Paule Gilbert
 		<h2>Portfolio</h2>
 	</section>
 </div>
+<script>
+	function setPlaySpeed() { 
+		document.getElementById("grid-video").playbackRate = 2.0;
+	} 
+</script>
