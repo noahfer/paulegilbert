@@ -3,13 +3,18 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
+        --accent: #5f7c95;
+        --light: #dde3e3;
+        --serif: Spectral, Times, serif;
+        --sans: Rubik, Arial, sans-serif;
+        font-family: var(--sans);
         color: inherit;
         text-decoration: inherit;
-        --accent: #9d2a2a;
-        --light: hsl(31, 84%, 95%);
     }
-    body {
+    html {
+        scroll-behavior: smooth;
+    }
+    body > div, main {
         background-color: var(--light);
     }
     body > * {
@@ -21,25 +26,34 @@
     section {
         margin: 0 5px;
     }
+    p {
+        margin-left: 10px;
+    }
 /* Paule Gilbert */
     h1 {
-        font: normal 30pt Times;
+        font: normal 40pt var(--serif);
 }
 /* Sub-headers */
     h2 {
-        font: normal 25pt Arial;
-        font-variant: small-caps;
+        font: normal 25pt var(--serif);
         color: var(--accent);
     }
 /* Thumbnails */
     h3 {
+        font-family: var(--serif);
         color: var(--accent);
         padding: 5px;
         width: 100%;
         text-align: center;
-        background-color: hsla(31, 84%, 95%, 0.75);
+        background-color: var(--light);
     }
 /* Homepage */
+    #grid-video {
+        width: 180vw;
+        margin: 0 -40vw;
+        position: fixed;
+        z-index: -1;
+    }
     nav > section {
         height: 100vh;
         display: flex;
@@ -53,10 +67,10 @@
         width: 100%;
         text-align: center;
     }
-    nav a {
-        font-size: 25px;
+    nav a:not(:first-child) {
+        font: normal 27px var(--sans);
         text-decoration: none;
-        font-variant: small-caps;
+        text-transform: uppercase;  
     }
     nav a:hover:not(:first-child) {
         text-decoration: underline;
@@ -76,13 +90,30 @@
     }
     #portfolio-list > section > a {
         height: 200px;
-        width: 360px;
+        padding: 0;
+        max-width: 360px;
         margin: 10px;
         text-decoration: none;
         display: flex;
         align-items: flex-end;
         background: no-repeat center;
         background-size: cover;
+    }
+    .fade {
+        opacity: 0;
+    }
+    @keyframes myFade {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    #portfolio-list > section > a:hover {
+        background-size: contain;
     }
     #portfolio-list > section > a:hover > h3 {
         text-decoration: underline;
@@ -91,6 +122,7 @@
     header {
         padding: 10px 0;
         text-decoration: none;
+        z-index: 1;
     }
     #top-header {
         background-color: var(--light);
@@ -115,31 +147,42 @@
     .link:hover {
         text-decoration: underline;
     }
-    .image {
-        height: 60vh;
-        width: 100%;
-        background-image: url(/icons/default.jpg);
+    .img-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .img {
+        flex-basis: 4in;
+        max-width: 100%;
+        height: 3in;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-size: contain;
         background-position: center;
-        border: 2px solid blue;
+        margin: 5px;
     }
     main {
-        height: 100vh;
-        border: 1px dashed black;
+        min-height: 100vh;
     }
     main > section > * {
         padding: 10px 0;
+    }
+    .meta {
+        float: right;
     }
 /* Footer */
     footer {
         background-color: var(--accent);
         color: var(--light );
         height: 50px;
+        z-index: 1;
     }
     footer p {
         padding-top: 10px;
+        z-index: 1;
     }
 /* Landscape */
     @media screen and () {
@@ -150,9 +193,9 @@
 
     }
 /* Desktop */
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 10in) {
         section {
-            width: 8.5in;
+            width: 10in;
             margin: 0 auto;
         }
     }
